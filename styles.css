@@ -1,12 +1,17 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    
+    justify-content:space-between;
 }
 
-/* img {
-    width: 100px;
-    height: 100px;
-} */
+img {
+    max-width: 256px;
+    height: auto;
+}
 
 .header{
     background-color: #1f2937;
@@ -15,7 +20,6 @@ body {
     flex-direction: column;
     gap:56px;
 }
-
 .header-links{
     display:flex;
     justify-content: space-between;
@@ -82,4 +86,43 @@ button{
 .site-description .sing-up{ 
     background-color: #3882f6;
     color:white;
+}
+
+.content-one{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+.title-one{
+    text-align: center;
+    font-size: 36px;
+    color:#1F2937;
+    font-weight: 900;
+}
+.images-with-text{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap:32px;
+}
+.image-with-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+.book-description{
+    max-width: 256px;
+    text-align: center;
+    font-size: 18px;
+    color:#555353
+}
+.image-with-text > img{
+    border: 2px solid #2f2f30;
+    border-radius: 12px;
 }
